@@ -1,0 +1,4 @@
+repository "blacksheepsample@tj_sheepsleepless@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
