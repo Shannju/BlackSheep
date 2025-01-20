@@ -49,7 +49,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _HColor: {r: 1, g: 1, b: 0.9025157, a: 1}
     - _OutlineColor: {r: 0.93710685, g: 0.026521731, b: 0.7349599, a: 1}
-    - _ReflectionColor: {r: 1, g: 0.9155019, b: 0.10196078, a: 1}
+    - _ReflectionColor: {r: 1, g: 0.9966768, b: 0.96540874, a: 1}
     - _SColor: {r: 1, g: 0.42452818, b: 0.9579947, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8488851332613470458
