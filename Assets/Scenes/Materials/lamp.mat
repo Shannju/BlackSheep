@@ -16,6 +16,7 @@ Material:
   - TCP2_COLORS_AS_NORMALS
   - TCP2_OUTLINE_TEXTURED_VERTEX
   - TCP2_REFLECTIONS
+  - TCP2_REFLECTIONS_FRESNEL
   - TCP2_RIM_LIGHTING_LIGHTMASK
   - TCP2_SHADOW_LIGHT_COLOR
   - TCP2_SHADOW_TEXTURE
@@ -126,7 +127,7 @@ Material:
     - _EmissionChannel: 4
     - _EnvironmentReflections: 1
     - _FresnelMax: 0.75
-    - _FresnelMin: 0
+    - _FresnelMin: 0.15
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -178,7 +179,7 @@ Material:
     - _Surface: 0
     - _UseAlphaTest: 0
     - _UseEmission: 0
-    - _UseFresnelReflections: 0
+    - _UseFresnelReflections: 1
     - _UseMatCap: 0
     - _UseMatCapMask: 0
     - _UseMobileMode: 0
@@ -193,13 +194,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.9124087, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 0.74271053, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HColor: {r: 0.8862745, g: 0.6670109, b: 0.31372553, a: 1}
+    - _HColor: {r: 1, g: 0.7382614, b: 0.31760997, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0.93710685, g: 0.026521731, b: 0.7349599, a: 1}
-    - _ReflectionColor: {r: 1, g: 0.9155019, b: 0.10196078, a: 1}
+    - _ReflectionColor: {r: 1, g: 0.90393007, b: 0, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
     - _SColor: {r: 1, g: 0, b: 0.50900984, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
