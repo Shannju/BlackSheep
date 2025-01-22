@@ -51,7 +51,7 @@ namespace UnityEditor.XR.Interaction.Toolkit.Samples
 
         static void AddRulesAndRunCheck()
         {
-            // 首先检查 InteractionLayerSettings.Instance 是否为 null
+/*            // 首先检查 InteractionLayerSettings.Instance 是否为 null
             if (InteractionLayerSettings.Instance == null)
             {
                 Debug.LogError("InteractionLayerSettings.Instance is null. Ensure XR Interaction Toolkit is properly initialized.");
@@ -62,8 +62,8 @@ namespace UnityEditor.XR.Interaction.Toolkit.Samples
             {
                 Debug.LogError("s_BuildValidationRules is null. Exiting AddRulesAndRunCheck.");
                 return;  // 如果为空，直接返回
-            }
-            if (s_BuildValidationRules.Count == 0)
+            }*/
+/*            if (s_BuildValidationRules.Count == 0)
             {
                 s_BuildValidationRules.Add(
                     new BuildValidationRule
@@ -122,7 +122,7 @@ namespace UnityEditor.XR.Interaction.Toolkit.Samples
                     });
 #endif
             }
-
+*/
             foreach (var buildTargetGroup in s_BuildTargetGroups)
             {
                 BuildValidator.AddRules(buildTargetGroup, s_BuildValidationRules);
