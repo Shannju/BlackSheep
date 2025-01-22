@@ -7,9 +7,10 @@ public class KnobControl : MonoBehaviour
     private XRKnob knob;  // XRKnob 引用
 
     [SerializeField]
-    private int maxTurns = 3;  // 最大旋转圈数，设置每 10 圈才旋转 360 度，降低速度
+    private int maxTurns = 10;  // 每 10 圈方向盘，物体旋转 1 圈
 
-    private float currentValue = 0f;  // 当前旋钮的值
+    private float lastKnobValue = 0f;  // 上次旋钮的值
+    private float currentRotation = 0f;  // 当前物体的旋转角度
 
     void Start()
     {
@@ -32,14 +33,19 @@ public class KnobControl : MonoBehaviour
     // 旋钮值变化时的回调
     void OnKnobValueChanged(float value)
     {
-        // 更新当前旋钮的值
-        currentValue = value;
+        // 计算旋钮的变化量
+        float deltaValue = value - lastKnobValue;  // 旋钮的增量
 
-        // 计算旋转角度：根据最大旋转圈数和旋钮值
-        // value 范围通常是 0 到 1，我们将其映射到 (最大圈数 * 360) 范围内。
-        float totalRotation = Mathf.Lerp(0f, 360f/ maxTurns, currentValue);
+        // 计算旋转增量：每转 maxTurns 圈，物体才转 1 圈
+        float rotationIncrement = deltaValue * 360f / maxTurns;
 
-        // 将该角度应用到旋钮本身的y轴上（根据需要调整轴向）
-        transform.localRotation = Quaternion.Euler(0, totalRotation, 0);
+        // 更新物体的旋转角度
+        currentRotation += rotationIncrement;
+
+        // 将旋转角度应用到物体
+        transform.localRotation = Quaternion.Euler(0, currentRotation, 0);
+
+        // 更新上次旋钮的值
+        lastKnobValue = value;
     }
 }
