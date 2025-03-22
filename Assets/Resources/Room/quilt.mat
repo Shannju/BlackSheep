@@ -8,24 +8,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: quilt
-  m_Shader: {fileID: -6465566751694194690, guid: df5bb027d94a6c44bb32b3c31ec1303f,
+  m_Shader: {fileID: -6465566751694194690, guid: edd7abf643fa4bc4e8561d4c280c97cf,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - TCP2_COLORS_AS_NORMALS
-  - TCP2_OUTLINE_TEXTURED_VERTEX
   - TCP2_REFLECTIONS
   - TCP2_REFLECTIONS_FRESNEL
   - TCP2_RIM_LIGHTING_LIGHTMASK
   - TCP2_SHADOW_LIGHT_COLOR
-  - TCP2_SHADOW_TEXTURE
   - TCP2_SPECULAR
+  - TCP2_SPECULAR_STYLIZED
+  m_InvalidKeywords:
+  - TCP2_COLORS_AS_NORMALS
+  - TCP2_OUTLINE_TEXTURED_VERTEX
   - TCP2_UV_NORMALS_FULL
-  - _EMISSION
-  m_InvalidKeywords: []
-  m_LightmapFlags: 0
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 6
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -119,7 +118,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -152,17 +151,17 @@ Material:
     - _OutlineWidth: 5.9
     - _Parallax: 0.005
     - _QueueOffset: 0
-    - _RampBands: 4
-    - _RampBandsSmoothing: 0.1
+    - _RampBands: 9
+    - _RampBandsSmoothing: 0.217
     - _RampOffset: 0
     - _RampScale: 1
-    - _RampSmoothing: 0.65
-    - _RampThreshold: 0.68
+    - _RampSmoothing: 0.554
+    - _RampThreshold: 0.802
     - _RampType: 0
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
     - _ReflectionMapType: 0
-    - _ReflectionSmoothness: 0.47
+    - _ReflectionSmoothness: 0.132
     - _RenderingMode: 0
     - _RimMax: 1
     - _RimMin: 0.5
@@ -175,23 +174,23 @@ Material:
     - _SpecularRoughness: 0.5
     - _SpecularToonSize: 0.25
     - _SpecularToonSmoothness: 0.05
-    - _SpecularType: 0
+    - _SpecularType: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UseAlphaTest: 0
-    - _UseEmission: 1
+    - _UseEmission: 0
     - _UseFresnelReflections: 1
     - _UseMatCap: 0
     - _UseMatCapMask: 0
     - _UseMobileMode: 0
     - _UseNormalMap: 0
     - _UseOcclusion: 0
-    - _UseOutline: 1
+    - _UseOutline: 0
     - _UseReflections: 1
     - _UseRim: 0
     - _UseRimLightMask: 1
-    - _UseShadowTexture: 1
+    - _UseShadowTexture: 0
     - _UseSpecular: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -199,14 +198,14 @@ Material:
     - _BaseColor: {r: 0.7385444, g: 0.6949685, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HColor: {r: 0.51572317, g: 0.51572317, b: 0.23191321, a: 1}
+    - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.93710685, g: 0.026521731, b: 0.7349599, a: 1}
+    - _OutlineColor: {r: 1, g: 0.43081754, b: 0.8724247, a: 1}
     - _ReflectionColor: {r: 0.9836944, g: 0.9779874, b: 1, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
-    - _SColor: {r: 1, g: 0.42452818, b: 0.9579947, a: 1}
+    - _SColor: {r: 1, g: 0.9025157, b: 0.99262726, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 0.69182384, g: 0.115303904, b: 0.115303904, a: 1}
+    - _SpecularColor: {r: 1, g: 0.48742133, b: 0.5761367, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8488851332613470458
 MonoBehaviour:
