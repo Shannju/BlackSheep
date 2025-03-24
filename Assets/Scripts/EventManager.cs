@@ -7,8 +7,11 @@ public class EventManager : MonoBehaviour
     public static EventManager Instance { get; private set; }
 
     public event Action<string> OnSceneLoadRequest;
-    public event Action OnGamePause;
-    public event Action OnGameResume;
+    public event Action OnGamePause;    // Reintroduced OnGamePause event
+    public event Action OnGameResume;   // Reintroduced OnGameResume event
+
+    private int currentSceneIndex = 0;
+    private string[] sceneList = { "0 Before", "1 Playground" };
 
     private void Awake()
     {
@@ -25,15 +28,33 @@ public class EventManager : MonoBehaviour
 
     void Start()
     {
-        SceneManager.LoadScene("StartMenu");
+        LoadNextScene();
     }
 
-
-    public void RequestSceneLoad(string sceneName)
+    public void RequestNextScene()
     {
-        OnSceneLoadRequest?.Invoke(sceneName);
+        currentSceneIndex++;
+        if (currentSceneIndex < sceneList.Length)
+        {
+            Invoke("LoadNextScene", 2.0f);
+        }
+        else
+        {
+            Debug.Log("已到达最后一个场景！");
+        }
     }
 
+    private void LoadNextScene()
+    {
+        if (currentSceneIndex < sceneList.Length)
+        {
+            string sceneName = sceneList[currentSceneIndex];
+            SceneManager.LoadScene(sceneName);
+            OnSceneLoadRequest?.Invoke(sceneName);
+        }
+    }
+
+    // Methods to trigger pause and resume
     public void PauseGame()
     {
         OnGamePause?.Invoke();

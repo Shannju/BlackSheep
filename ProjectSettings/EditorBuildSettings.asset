@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/main_scene2 0ws.unity
     guid: c9fc26209d5e3de4699648846391e874
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: c12c51ada67d44d45be937396fdb32fc
+  - enabled: 1
+    path: Assets/Scenes/0 Before.unity
+    guid: 915424134eea00e44958e23e65378b70
+  - enabled: 1
+    path: Assets/Scenes/2 Inside Box.unity
+    guid: eeddb94322feef244b84538b30d2b2ac
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 303837620705fb54d81c3c72064ce7a2,
       type: 2}
