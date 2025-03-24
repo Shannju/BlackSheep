@@ -11,7 +11,7 @@ public class EventManager : MonoBehaviour
     public event Action OnGameResume;   // Reintroduced OnGameResume event
 
     private int currentSceneIndex = 0;
-    private string[] sceneList = { "0 Before", "1 Playground" };
+    private string[] sceneList = { "0 Before", "1 Room" };
 
     private void Awake()
     {

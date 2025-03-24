@@ -22,7 +22,7 @@ public class SceneEventManager : MonoBehaviour
         // Trigger end game event
         OnSceneEnd?.Invoke();
 
-        Debug.Log("scene end");
+
 
         // Make sure the EventManager exists
         if (EventManager.Instance != null)
