@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 34792
+  GUIID: 119878
 --- !u!23 &196890263
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6850,18 +6850,10 @@ MonoBehaviour:
   - ...
   - Just because sheep sounds like sleep.
   - I am here to work all night.
-  - For some sleepless silly people.
   - I've being working for two hours. I am tired.
-  - Hey, Bro over there!!!
-  - Let's leave!
   - '...  '
-  - "\u201CNo one answers your call.\u201D "
-  - ...
-  - "\u201CCount to one hundred, and she will fall asleep.\u201D  "
-  - Will anything happen when the number hits a hundred?
-  - Is it just a coincidence of fantasy?
-  - '"You can wait for a hundred sheep, or just push the left joystick to leave the
-    bed."'
+  - "I want to leave\uFF01\uFF01"
+  - "\u201D\u2190 Jump\uFF01\u201C\uFF08push the left joystick\uFF09"
 --- !u!114 &8784990583810873097
 MonoBehaviour:
   m_ObjectHideFlags: 0

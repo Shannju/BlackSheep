@@ -36,7 +36,7 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: b163bf2a288dd46efa3cc7460d5f9cd8, type: 3}
-        m_Scale: {x: 4, y: 4}
+        m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -196,13 +196,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+    - _BaseColor: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.3454018, g: 0.14407416, b: 0.4723258, a: 1}
+    - _EmissionColor: {r: 0.21154305, g: 0.086274505, b: 0.3019608, a: 1}
     - _HColor: {r: 0.74213827, g: 0.74213827, b: 0.74213827, a: 1}
     - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 1, g: 0.43081754, b: 0.8724247, a: 1}
-    - _ReflectionColor: {r: 0.9836944, g: 0.9779874, b: 1, a: 1}
+    - _ReflectionColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
     - _SColor: {r: 0.8113208, g: 0.5995609, b: 0.79438, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
