@@ -11,6 +11,7 @@ public class SceneEventManager0 : MonoBehaviour
     // 使用 UnityEvent 来代替 Action 类型的事件
     public UnityEvent OnSceneStart;   // 场景开始时触发的事件
     public UnityEvent OnSceneEnd;     // 场景结束时触发的事件
+    public UnityEvent OnAllEventsCompleted;  // 所有事件完成时触发的事件
 
     private void Start()
     {
@@ -46,14 +47,13 @@ public class SceneEventManager0 : MonoBehaviour
     {
         if (event1Completed && event2Completed && event3Completed)
         {
+            OnAllEventsCompleted?.Invoke();  // 所有事件完成时触发 UnityEvent
             EndGame();
         }
     }
 
     public void EndGame()
     {
-
-
         // Trigger end game event
         OnSceneEnd?.Invoke();
 
