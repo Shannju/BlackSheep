@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 3959464450442619029}
   - component: {fileID: 8581482157398092516}
   - component: {fileID: 1656751273062173451}
-  - component: {fileID: 230965030437388336}
   m_Layer: 0
   m_Name: paper
   m_TagString: Untagged
@@ -289,24 +288,3 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!65 &230965030437388336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5685624107735290451}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.017586, y: 0.079911, z: 4.9182577}
-  m_Center: {x: 0.0000015497207, y: 0.010376499, z: -0.0000038146973}
