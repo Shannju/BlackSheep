@@ -29,5 +29,28 @@ namespace TinyGiantStudio.Text.Example
                 modular3DText.UpdateText(customTexts[currentTextIndex]);
             }
         }
+
+        // 清空所有句子的函数
+        public void ClearAllTexts()
+        {
+            Debug.Log("clear all texts");
+            customTexts.Clear();
+            if (modular3DText != null)
+                modular3DText.UpdateText("");  // Clear the displayed text
+        }
+
+        // 新增一条句子的函数
+        public void AddNewText(string newText)
+        {
+            Debug.Log("add new text: " + newText);
+            if (!string.IsNullOrEmpty(newText))
+            {
+                customTexts.Add(newText);
+                if (customTexts.Count == 1 && modular3DText != null) // If this is the first text, display it immediately
+                {
+                    modular3DText.UpdateText(newText);
+                }
+            }
+        }
     }
 }
