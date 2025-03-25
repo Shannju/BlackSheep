@@ -11,6 +11,7 @@ namespace TinyGiantStudio.Text.Example
         private int currentTextIndex = 0;  // 当前显示的文本索引
 
         public SceneEventManager0 sceneEventManager;
+        public int eventNumber;  // 用来选择触发哪个事件
 
         // Start() 中不再做任何初始化
         void Start()
@@ -26,11 +27,11 @@ namespace TinyGiantStudio.Text.Example
             Debug.Log("change text");
             if (customTexts.Count > 0 && modular3DText != null)
             {
-                // 如果到了最后一个文本，调用 TriggerEvent1()
+                // 如果到了最后一个文本，调用指定的事件
                 if (currentTextIndex == customTexts.Count - 1)
                 {
                     modular3DText.UpdateText(customTexts[currentTextIndex]);
-                    TriggerEvent1();
+                    TriggerEventBasedOnNumber(eventNumber);
                     return;
                 }
                 // 循环更换文本
@@ -38,17 +39,32 @@ namespace TinyGiantStudio.Text.Example
 
                 // 更新文本
                 modular3DText.UpdateText(customTexts[currentTextIndex]);
-
-
             }
         }
 
-        private void TriggerEvent1()
+        private void TriggerEventBasedOnNumber(int eventNum)
         {
             if (sceneEventManager != null)
             {
-                sceneEventManager.OnEvent1Complete();
-                Debug.Log("Event 1 completed!");
+                switch (eventNum)
+                {
+                    case 1:
+                        sceneEventManager.OnEvent1Complete();
+                        Debug.Log("Event 1 completed!");
+                        break;
+                    case 2:
+                        sceneEventManager.OnEvent2Complete();
+                        Debug.Log("Event 2 completed!");
+                        break;
+                    case 3:
+                        sceneEventManager.OnEvent3Complete();
+                        Debug.Log("Event 3 completed!");
+                        break;
+                    // Add more cases as needed for other events
+                    default:
+                        Debug.LogWarning("No event associated with the given number.");
+                        break;
+                }
             }
             else
             {
