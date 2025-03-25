@@ -4982,7 +4982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &681857985
 Transform:
   m_ObjectHideFlags: 0
@@ -5047,7 +5047,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681857984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05d111598625e6e41bceafdd3c615d5e, type: 3}
   m_Name: 
@@ -5072,6 +5072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 685259455}
   - component: {fileID: 685259454}
+  - component: {fileID: 685259456}
   m_Layer: 0
   m_Name: TimerTrigger
   m_TagString: Untagged
@@ -5095,9 +5096,9 @@ MonoBehaviour:
   onTimerComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1749550688}
-        m_TargetAssemblyTypeName: SceneEventManager, Assembly-CSharp
-        m_MethodName: EndGame
+      - m_Target: {fileID: 1749550690}
+        m_TargetAssemblyTypeName: SceneEventManager0, Assembly-CSharp
+        m_MethodName: allEnd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5122,6 +5123,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685259456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685259453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55ee936cb7678c43996c97b7fcacd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 65
+  onTimerComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1749550690}
+        m_TargetAssemblyTypeName: SceneEventManager0, Assembly-CSharp
+        m_MethodName: EndGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &715396831
 GameObject:
   m_ObjectHideFlags: 0
@@ -9219,7 +9248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 272028
+  GUIID: 528034
 --- !u!23 &1250453337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11840,7 +11869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 272170
+  GUIID: 528176
 --- !u!23 &1527074785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14175,7 +14204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1749550689}
-  - component: {fileID: 1749550688}
+  - component: {fileID: 1749550690}
   m_Layer: 0
   m_Name: SceneEventManager
   m_TagString: Untagged
@@ -14183,36 +14212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1749550688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749550687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38c888d82a88ee4bbdb436cba46c1c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnSceneStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnSceneEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657035676}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!4 &1749550689
 Transform:
   m_ObjectHideFlags: 0
@@ -14228,6 +14227,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749550690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749550687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e98d78ebada1546a108a4790178ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnSceneStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSceneEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 681857987}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnAllEventsCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 657035676}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1755378368
 GameObject:
   m_ObjectHideFlags: 0
@@ -15055,7 +15099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 272328
+  GUIID: 528334
 --- !u!23 &1893217695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18211,7 +18255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 272504
+  GUIID: 528510
 --- !u!23 &2112669900
 MeshRenderer:
   m_ObjectHideFlags: 0

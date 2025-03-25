@@ -51,6 +51,10 @@ public class SceneEventManager0 : MonoBehaviour
             EndGame();
         }
     }
+    public void allEnd()
+    {
+        OnAllEventsCompleted?.Invoke();
+    }
 
     public void EndGame()
     {
