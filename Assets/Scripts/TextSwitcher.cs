@@ -21,9 +21,15 @@ namespace TinyGiantStudio.Text.Example
         // 用来切换文本的函数
         public void SwitchText()
         {
+
             Debug.Log("change text");
             if (customTexts.Count > 0 && modular3DText != null)
             {
+                if (currentTextIndex == customTexts.Count - 1)
+                {
+                    modular3DText.UpdateText(customTexts[currentTextIndex]);
+                    return;
+                }
                 // 循环更换文本
                 currentTextIndex = (currentTextIndex + 1) % customTexts.Count;
                 modular3DText.UpdateText(customTexts[currentTextIndex]);
