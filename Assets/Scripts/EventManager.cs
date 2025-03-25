@@ -11,7 +11,7 @@ public class EventManager : MonoBehaviour
     public event Action OnGameResume;   // Reintroduced OnGameResume event
 
     private int currentSceneIndex = 0;
-    private string[] sceneList = { "0 Before", "1 Room" };
+    private string[] sceneList = { "0 Before", "1 Room","2 Inside Box","3 Room Again" };
 
     private void Awake()
     {
@@ -40,7 +40,7 @@ public class EventManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("已到达最后一个场景！");
+            Debug.Log(" 训      一        ");
         }
     }
 
