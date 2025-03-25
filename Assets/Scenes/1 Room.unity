@@ -2947,7 +2947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 89064
+  GUIID: 57892
 --- !u!23 &583645534
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10340,7 +10340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 89160
+  GUIID: 57996
 --- !u!23 &1005058417
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20917,7 +20917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GUIID: 90688
+  GUIID: 59536
 --- !u!4 &2411858055703895739
 Transform:
   m_ObjectHideFlags: 0
@@ -21245,6 +21245,11 @@ PrefabInstance:
     - target: {fileID: 2534225169915437540, guid: 4e660da2419d1614198b2c073ddf863d,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958524496003487954, guid: 4e660da2419d1614198b2c073ddf863d,
+        type: 3}
+      propertyPath: m_EnableComfortMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3115292631596432376, guid: 4e660da2419d1614198b2c073ddf863d,
