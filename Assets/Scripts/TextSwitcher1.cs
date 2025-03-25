@@ -26,17 +26,20 @@ namespace TinyGiantStudio.Text.Example
             Debug.Log("change text");
             if (customTexts.Count > 0 && modular3DText != null)
             {
+                // 如果到了最后一个文本，调用 TriggerEvent1()
+                if (currentTextIndex == customTexts.Count - 1)
+                {
+                    modular3DText.UpdateText(customTexts[currentTextIndex]);
+                    TriggerEvent1();
+                    return;
+                }
                 // 循环更换文本
                 currentTextIndex = (currentTextIndex + 1) % customTexts.Count;
 
                 // 更新文本
                 modular3DText.UpdateText(customTexts[currentTextIndex]);
 
-                // 如果到了最后一个文本，调用 TriggerEvent1()
-                if (currentTextIndex == customTexts.Count - 1)
-                {
-                    TriggerEvent1();
-                }
+
             }
         }
 
